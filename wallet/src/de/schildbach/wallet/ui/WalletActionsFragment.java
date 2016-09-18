@@ -68,6 +68,26 @@ public final class WalletActionsFragment extends Fragment
 			}
 		});
 
+		final View serverButton = view.findViewById(R.id.wallet_actions_paymentchannel_server);
+		serverButton.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(final View v)
+			{
+				activity.handlePaymentChannelServer();
+			}
+		});
+
+		final View clientButton = view.findViewById(R.id.wallet_actions_paymentchannel_client);
+		clientButton.setOnClickListener(new OnClickListener()
+		{
+			@Override
+			public void onClick(final View v)
+			{
+				activity.handlePaymentChannelClient();
+			}
+		});
+
 		final View sendQrButton = view.findViewById(R.id.wallet_actions_send_qr);
 		sendQrButton.setOnClickListener(new OnClickListener()
 		{

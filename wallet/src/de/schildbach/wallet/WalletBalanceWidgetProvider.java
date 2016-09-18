@@ -165,6 +165,9 @@ public class WalletBalanceWidgetProvider extends AppWidgetProvider
 			views.setViewVisibility(R.id.widget_app_icon, minWidth > 400 ? View.VISIBLE : View.GONE);
 			views.setViewVisibility(R.id.widget_button_request, minWidth > 300 ? View.VISIBLE : View.GONE);
 			views.setViewVisibility(R.id.widget_button_send, minWidth > 300 ? View.VISIBLE : View.GONE);
+			// TODO: https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html
+			views.setViewVisibility(R.id.widget_button_paymentchannel_server, minWidth > 300 ? View.VISIBLE : View.GONE);
+			views.setViewVisibility(R.id.widget_button_paymentchannel_client, minWidth > 300 ? View.VISIBLE : View.GONE);
 			views.setViewVisibility(R.id.widget_button_send_qr, minWidth > 200 ? View.VISIBLE : View.GONE);
 		}
 
@@ -172,6 +175,9 @@ public class WalletBalanceWidgetProvider extends AppWidgetProvider
 		views.setOnClickPendingIntent(R.id.widget_button_request,
 				PendingIntent.getActivity(context, 0, new Intent(context, RequestCoinsActivity.class), 0));
 		views.setOnClickPendingIntent(R.id.widget_button_send, PendingIntent.getActivity(context, 0, new Intent(context, SendCoinsActivity.class), 0));
+		// TODO: https://developer.android.com/reference/android/appwidget/AppWidgetProvider.html
+		views.setOnClickPendingIntent(R.id.widget_button_paymentchannel_server, PendingIntent.getActivity(context, 0, new Intent(context, SendCoinsActivity.class), 0));
+		views.setOnClickPendingIntent(R.id.widget_button_paymentchannel_client, PendingIntent.getActivity(context, 0, new Intent(context, SendCoinsActivity.class), 0));
 		views.setOnClickPendingIntent(R.id.widget_button_send_qr,
 				PendingIntent.getActivity(context, 0, new Intent(context, SendCoinsQrActivity.class), 0));
 

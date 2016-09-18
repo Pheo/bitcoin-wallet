@@ -286,6 +286,14 @@ public final class WalletActivity extends AbstractWalletActivity implements Acti
 				handleSendCoins();
 				return true;
 
+			case R.id.wallet_options_server:
+				handlePaymentChannelServer();
+				return true;
+
+			case R.id.wallet_options_client:
+				handlePaymentChannelClient();
+				return true;
+
 			case R.id.wallet_options_scan:
 				handleScan();
 				return true;
@@ -341,6 +349,18 @@ public final class WalletActivity extends AbstractWalletActivity implements Acti
 
 	public void handleSendCoins()
 	{
+		startActivity(new Intent(this, SendCoinsActivity.class));
+	}
+
+	public void handlePaymentChannelServer()
+	{
+		// TODO: Payment Channel Server Activity
+		startActivity(new Intent(this, SendCoinsActivity.class));
+	}
+
+	public void handlePaymentChannelClient()
+	{
+		// TODO: Payment Channel Client Activity
 		startActivity(new Intent(this, SendCoinsActivity.class));
 	}
 

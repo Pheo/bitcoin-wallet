@@ -16,6 +16,20 @@
 		android:titleCondensed="@string/button_send_coins"
 		android:visible="@bool/wallet_actions_top"/>
 	<item
+		android:id="@+id/wallet_options_server"
+		android:icon="@drawable/ic_send_white_24dp"
+		android:showAsAction="always|withText"
+		android:title="@string/paymentchannel_server_activity_title"
+		android:titleCondensed="@string/button_send_coins"
+		android:visible="@bool/wallet_actions_top"/>
+	<item
+		android:id="@+id/wallet_options_client"
+		android:icon="@drawable/ic_send_white_24dp"
+		android:showAsAction="always|withText"
+		android:title="@string/paymentchannel_client_activity_title"
+		android:titleCondensed="@string/button_send_coins"
+		android:visible="@bool/wallet_actions_top"/>
+	<item
 		android:id="@+id/wallet_options_scan"
 		android:icon="@drawable/ic_photo_camera_white_24dp"
 		android:showAsAction="always|withText"

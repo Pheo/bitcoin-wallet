@@ -85,6 +85,24 @@
 		android:src="@drawable/ic_send_white_24dp" />
 
 	<ImageButton
+		android:id="@+id/widget_button_paymentchannel_server"
+		android:layout_width="0px"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:background="@drawable/appwidget_button_center"
+		android:contentDescription="@string/button_paymentchannel_server"
+		android:src="@drawable/ic_more_vert_white_24dp" />
+
+	<ImageButton
+		android:id="@+id/widget_button_paymentchannel_client"
+		android:layout_width="0px"
+		android:layout_height="match_parent"
+		android:layout_weight="1"
+		android:background="@drawable/appwidget_button_center"
+		android:contentDescription="@string/button_paymentchannel_client"
+		android:src="@drawable/ic_more_vert_white_24dp" />
+
+	<ImageButton
 		android:id="@+id/widget_button_send_qr"
 		android:layout_width="0px"
 		android:layout_height="match_parent"
